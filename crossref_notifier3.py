@@ -13,7 +13,7 @@ DAYS_BACK = 1
 MAX_RESULTS = 20
 LAST_DATE_FILE = "last_checked.txt"
 
-THRESHOLD = 2  # スコア閾値（調整ポイント）
+THRESHOLD = 5  # スコア閾値（調整ポイント）
 
 # --------------------------
 # キーワード定義
@@ -186,9 +186,9 @@ def score_paper(item):
     count = sum(1 for k in REACTION_LIKE_KEYWORDS if k in text)
 
     if count == 0:
-        score -= 6
+        score -= 0
     elif count == 1:
-        score -= 2
+        score -= 0
     else:
         score += 0
 
