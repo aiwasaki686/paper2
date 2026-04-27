@@ -13,7 +13,7 @@ DAYS_BACK = 1
 MAX_RESULTS = 20
 LAST_DATE_FILE = "last_checked.txt"
 
-THRESHOLD = 5  # スコア閾値（調整ポイント）
+THRESHOLD = 2  # スコア閾値（調整ポイント）
 
 # --------------------------
 # キーワード定義
