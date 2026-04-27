@@ -9,7 +9,7 @@ import re
 # --------------------------
 TEAMS_WEBHOOK_URL = "https://chuouniv.webhook.office.com/webhookb2/c20db6ac-7e2c-456c-948f-6824def57b98@05bcfdea-243a-4f91-bbd6-49f7fdd85790/IncomingWebhook/23805873668445c88db4f16423a9ff34/85764259-5fc2-4338-b877-563b600528bc/V2bWKI4jyUZDOvPCDEDh3pvXGbS1K72HToFBrWB18rwqw1"
 
-DAYS_BACK = 1
+DAYS_BACK = 10
 MAX_RESULTS = 20
 LAST_DATE_FILE = "last_checked.txt"
 
