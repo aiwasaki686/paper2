@@ -20,154 +20,63 @@ THRESHOLD = 5  # スコア閾値（調整ポイント）
 # --------------------------
 
 CORE_KEYWORDS = [
-    "photochemical",
-    "photoredox",
-    "photocatalytic",
-    "photocatalyzed",
-    "photo-induced",
-    "light-driven",
-    "light-promoted",
-    "light-mediated",
-    "visible-light"
+    "natural product",
+    "peptide",
+    "terpene",
+    "alkaloid",
+    "propanoid",
+    "polyketide",
+    "macrolide",
+    "NRPS",
+    "PKS",
+    "RIPPS",
+    "cyanobacteria",
+    "cyanobacterium",
+    "sponge"
 ]
 
 REACTION_KEYWORDS = [
-    "c–h", "c-h", "cross-coupling", "cyclization",
-    "addition", "oxidation", "reduction", "functionalization",
-
-    "single electron transfer", "SET",
-    "energy transfer", "EnT",
-    "proton-coupled electron transfer", "PCET",
-    "hydrogen-atom transfer", "HAT",
-    "cooperative", "dual",
-    
-    "coupling reaction",
-    "c–c bond formation", "c-c bond formation",
-    "c–n bond formation", "c-n bond formation",
-    "c–o bond formation", "c-o bond formation",
-    "c–s bond formation", "c-s bond formation",
-
-    "amination",
-    "arylation",
-    "alkylation",
-    "acylation",
-    "olefination",
-
-    "hydrofunctionalization",
-    "hydroamination",
-    "hydroarylation",
-    "hydroalkylation",
-
-    "dehydrogenation",
-    "hydrogenation",
-
-    "annulation",
-    "ring-opening",
-    "ring opening",
-    "ring-closing",
-    "ring closing",
-
-    "isomerization",
-
-    "cascade reaction",
-    "tandem reaction",
-    "domino reaction",
-
-    "multicomponent reaction",
-
-    "late-stage functionalization",
-
-    "site-selective",
-    "regioselective",
-    "chemoselective",
-    "enantioselective",
-
-    "catalytic cycle"
+    "NMR", "DFT", "DP4", "CP3",
+    "isolation", "toxicity", "biosynthesis"
 ]
 
 ORGANIC_KEYWORDS = [
-    "alkene", "alkyne", "aryl", "amine", "alcohol",
-    "ester", "ketone", "amide", "carbene", "NHC", "imine",
-    "enantio", "diastereo", "synthesis"
+    "synthesis"
 ]
 
 EXCLUDE_STRONG = [
     # 生物
-    "protein", "proteins",
-    "enzymatic", "channel",
-    "cell", "cells", "cellular",
-    "dna", "rna", "genome", "genomic",
-    "gene", "genes", "genetic",
-    "transcription", "translation",
-    "expression", "overexpression",
-    "mutation", "mutant",
-    "metabolism", "metabolic",
-    "biosynthesis",
-    "biomolecule", "biology",
-
+    
     # 医療
-    "disease", "cancer", "tumor", "tumour",
-    "therapy", "therapeutic",
-    "clinical", "patient",
-    "diagnosis", "treatment",
-    "pharmaceutical",
-    "neuron", "neuronal", "brain", "cns",
-    "immune", "immunity", "immunology",
-    "t cell", "b cell",
-    "macrophage", "cytokine", "inflammation",
-    "antigen", "antibody",
+   
 
     # 環境・表面
-    "co2 reduction", "carbon dioxide reduction",
-    "water splitting", "multicarbon", "fuel", "fossil",
-    "hydrogen evolution", "oxygen evolution", "electrification",
-    "fuel cell", "hydrogen storage", "environment",
-    "energy storage", "energy conversion",
+  
     
     # 材料
-    "polymer", "polymeric",
-    "nanoparticle", "nanomaterial", "nanostructure",
-    "thin film", "coating",
-    "device", "sensor", "detector",
-    "electrode",
-    "battery", "supercapacitor",
-    "photovoltaic", "solar cell",
-    "optoelectronic",
+  
 
     # AI
-    "machine learning", "deep learning", "neural network"
+  
 ]
 
 EXCLUDE_MIDDLE = [
     # supramolecular
-    "host-guest", "supramolecular",
-    "recognition", "binding",
-    "macrocycle", "cavity", "anion", "anions",
+   
 
     # フレームワーク
-    "framework", "cof", "mof",
-    "covalent organic framework",
-    "metal-organic framework", "mesostructured",
-    "porous", "crystal", "crystalline",
+   
 
     # 物性
-    "quantum", "quantum dot",
-    "semiconductor", "band gap",
-    "conductivity", "magnetic", "spin",
-    "phonon",
-    "charge transfer", "exciton",
-    "photophysical",
+   
 
     # 分析
-    "spectroscopy", "microscopy",
-    "crystal structure",
-    "diffraction"
+   
 ]
 
 EXCLUDE_WEAK = [
     # 計算
-    "density functional theory",
-    "ab initio", "simulation",
+   
 
     # 総説系
     "review", "perspective", "account",
@@ -177,44 +86,14 @@ EXCLUDE_WEAK = [
 
 REACTION_LIKE_KEYWORDS = [
     # 基本
-    "reaction", "reactivity", "mechanism",
-    "catalysis", "catalytic", "catalyzed",
-
-    # 結合形成
-    "bond formation",
-
-    # 代表的変換
-    "coupling", "cross-coupling",
-    "functionalization",
-    "amination", "arylation", "alkylation", "acylation",
-    "olefination",
-
-    # 付加・除去
-    "addition", "cyclization",
-    "annulation",
-    "ring opening", "ring-opening",
-    "ring closing", "ring-closing",
-
-    # 選択性
-    "regioselective",
-    "chemoselective", "enantioselective",
-
-    # 合成文脈
-    "transformation", "conversion",
-
-    # 連続反応
-    "cascade", "tandem", "domino",
-
-    # その他重要
-    "carboxylation", "borylation", "silylation"
+   
 ]
 
 JOURNALS = [
     "Nature", "Nature Communications", "Nature Catalysis", "Nature Chemistry", "Nature Synthesis",
-    "Science", "Chem", "Journal of the American Chemical Society",
-    "Angewandte Chemie International Edition", "ACS Catalysis", "Journal of Organic Chemistry",
-    "Organic Letters", "Advanced Synthesis and Catalysis",
-    "Chemical Science", "Chemical Communications", "ChemPhotoChem"
+    "Science", "Chem", "Journal of the American Chemical Society", "Journal of Natural Products",
+    "Angewandte Chemie International Edition", "Journal of Organic Chemistry",
+    "Organic Letters", "Chemical Science", "Chemical Communications"
 ]
 
 JOURNAL_ABBR = {
@@ -223,18 +102,15 @@ JOURNAL_ABBR = {
     "Angewandte Chemie International Edition": "Angew. Chem. Int. Ed.",
     "Chemical Science": "Chem. Sci.",
     "Chemical Communications": "Chem. Commun.",
-    "ACS Catalysis": "ACS Catal.",
     "Journal of Organic Chemistry": "J. Org. Chem.",
     "Nature Chemistry": "Nat. Chem.",
     "Nature Communications": "Nat. Commun.",
     "Science": "Science",
     "Chem": "Chem",
+    "Journal of Natural Products": "J. Nat. Prod."
 }
 
 CORE_REQUIRED_JOURNALS = [
-    "Journal of Organic Chemistry",
-    "Organic Letters",
-    "Advanced Synthesis and Catalysis",
     "Chemical Science",
     "Chemical Communications"
 ]
